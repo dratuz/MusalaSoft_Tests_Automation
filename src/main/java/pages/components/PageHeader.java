@@ -2,6 +2,7 @@ package pages.components;
 
 import core.BasePageAction;
 import org.openqa.selenium.By;
+import utils.Browser;
 
 public class PageHeader extends BasePageAction {
     private static final By HEADER_COMPANY_ELEMENT = By.xpath("//*[@id=\"menu-main-nav-1\"]/li[1]/a");

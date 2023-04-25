@@ -5,14 +5,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import utils.Browser;
-
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.testng.Assert.assertTrue;
+import org.testng.Assert;
 
 public class Jobs extends BasePageAction {
 
@@ -42,7 +38,7 @@ public class Jobs extends BasePageAction {
         }
 
         for (String title : elementTitles) {
-            assertTrue(mainSections.contains(title), title + " " + messageOnTestFailure_mainSections);
+            Assert.assertTrue(mainSections.contains(title), title + " " + messageOnTestFailure_mainSections);
         }
     }
 

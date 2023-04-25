@@ -53,10 +53,9 @@ public class CareersTest extends BaseTest {
         Jobs.verifyApplyButtonIsPresent(exp_buttonValue, messageOnTestFailure_applyButton);
         Jobs.clickApplyButton();
 
-        String invalidEmailPath = "src/main/resources/invalidEmail.properties";
-        String cvPathFilePath = "src/main/resources/cv.properties";
-        String invalidEmail = PropertiesReader.invalidEmail(invalidEmailPath);
-        String cvPath = PropertiesReader.cvPath(cvPathFilePath);
+        String configPath = "src/main/resources/config.properties";
+        String invalidEmail = PropertiesReader.invalidEmail(configPath);
+        String cvPath = PropertiesReader.cvPath(configPath);
 
         Jobs.inputInvalidDataInApplyForm(invalidEmail, cvPath);
 

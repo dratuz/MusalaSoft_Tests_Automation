@@ -6,13 +6,13 @@ import org.openqa.selenium.By;
 
 public class Contacts extends BasePageAction {
 
-    private static final By CONTACT_US_BUTTON = By.cssSelector("a.fancybox > button");
+    private static final By CONTACT_US_BUTTON = By.cssSelector(".contact-label");
     private static final By CONTACT_US_FORM_NAME_INPUT_FIELD = By.id("cf-1");
     private static final By CONTACT_US_FORM_EMAIL_INPUT_FIELD = By.id("cf-2");
     private static final By CONTACT_US_FORM_SUBJECT_INPUT_FIELD = By.id("cf-4");
     private static final By CONTACT_US_FORM_MESSAGE_INPUT_FIELD = By.id("cf-5");
     private static final By CONTACT_US_FORM_SEND_BUTTON = By.cssSelector("input[wfd-id='id26']");
-    private static final By CONTACT_US_FORM_INVALID_EMAIL_MESSAGE = By.xpath("//*[@id=\"wpcf7-f875-o1\"]/form/p[2]/span/span");
+    private static final By CONTACT_US_FORM_INVALID_EMAIL_MESSAGE = By.cssSelector("#cf-2 + span");
     private static final By CONTACTS_BODY = By.cssSelector("section.contacts");
 
     /**

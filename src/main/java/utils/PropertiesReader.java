@@ -22,14 +22,14 @@ public class PropertiesReader {
         Properties properties = getProperties(filePath);
 
         // Retrieve the value of the "email" property
-        return properties.getProperty("email");
+        return properties.getProperty("testEmail");
     }
 
     public static String cvPath(String filePath) throws IOException {
         Properties properties = getProperties(filePath);
 
         // Retrieve the value of the "email" property
-        return properties.getProperty("path");
+        return properties.getProperty("cvPath");
     }
 
     private static Properties getProperties(String filePath) throws IOException {
