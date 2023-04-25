@@ -4,7 +4,7 @@ import core.BasePageAction;
 import org.openqa.selenium.By;
 
 public class Careers extends BasePageAction {
-    private static final By CHECK_OUR_OPEN_POSITIONS_BUTTON = By.xpath("//*[@id=\"content\"]/div[1]/div/div[1]/div/section/div/a/button");
+    private static final By CHECK_OUR_OPEN_POSITIONS_BUTTON = By.cssSelector("button[class=\"contact-label contact-label-code btn btn-1b\"] span");
 
     /**
      * Click on "Check our open positions" button

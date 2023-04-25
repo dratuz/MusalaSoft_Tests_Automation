@@ -7,8 +7,8 @@ import org.testng.Assert;
 
 public class MusalaSoftFacebookProfile extends BasePageAction {
 
-    private static final By ONLY_ALLOW_ESSENTIAL_COOKIES_BUTTON = By.xpath(
-            "//*[@id=\"facebook\"]/body/div[2]/div[1]/div/div[2]/div/div/div/div[2]/div/div[1]/div[2]/div");
+    private static final By ONLY_ALLOW_ESSENTIAL_COOKIES_BUTTON = By.cssSelector(
+            "span[class=\"x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen x1s688f x1dem4cn\"]");
     private static final By FACEBOOK_PROFILE_PICTURE = By.cssSelector("image[style=\"height: 168px; width: 168px;\"]");
 
     /**

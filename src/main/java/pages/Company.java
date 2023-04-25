@@ -7,8 +7,8 @@ import utils.Browser;
 
 public class Company extends BasePageAction {
 
-    private static final By COMPANY_LEADERSHIP_SECTION_ELEMENT = By.cssSelector("section.company-members > div > h2");
-    private static final By COMPANY_FACEBOOK_LINK_FROM_FOOTER = By.cssSelector("body > footer > div > div > a:nth-child(5)");
+    private static final By COMPANY_LEADERSHIP_SECTION_ELEMENT = By.cssSelector("div[class=\"cm-content\"] h2");
+    private static final By COMPANY_FACEBOOK_LINK_FROM_FOOTER = By.cssSelector("span[class=\"musala musala-icon-facebook\"]");
     private static final By COOKIES_ACCEPT_BUTTON = By.id("wt-cli-accept-all-btn");
 
 

@@ -17,10 +17,10 @@ public class Jobs extends BasePageAction {
     private static final By APPLY_FORM_EMAIL_FIELD = By.id("cf-2");
     private static final By APPLY_FORM_UPLOAD_CV_FIELD = By.cssSelector("#uploadtextfield");
     private static final By COOKIES_ACCEPT_BUTTON = By.id("wt-cli-accept-all-btn");
-    private static final By APPLY_FORM_SEND_BUTTON = By.xpath("//*[@id=\"wpcf7-f880-o1\"]/form/div[4]/p/input");
-    private static final By APPLY_FORM_NAME_ERROR_MESSAGE = By.xpath("//*[@id=\"wpcf7-f880-o1\"]/form/p[2]/span/span");
-    private static final By APPLY_FORM_EMAIL_ERROR_MESSAGE = By.xpath("//*[@id=\"wpcf7-f880-o1\"]/form/p[3]/span/span");
-    private static final By APPLY_FORM_MOBILE_ERROR_MESSAGE = By.cssSelector("#wpcf7-f880-o1 > form > p:nth-child(6) > span > span");
+    private static final By APPLY_FORM_SEND_BUTTON = By.cssSelector("input[type=\"submit\"][value=\"Send\"]");
+    private static final By APPLY_FORM_NAME_ERROR_MESSAGE = By.cssSelector("input[id=\"cf-1\"] + span");
+    private static final By APPLY_FORM_EMAIL_ERROR_MESSAGE = By.cssSelector("input[id=\"cf-2\"] + span");
+    private static final By APPLY_FORM_MOBILE_ERROR_MESSAGE = By.cssSelector("input[id=\"cf-3\"] + span");
 
 
     /**
