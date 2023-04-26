@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class CareersTest extends BaseTest {
+public class CareerTest extends BaseTest {
 
     /**
      * Test to verify:
@@ -64,5 +64,26 @@ public class CareersTest extends BaseTest {
         String exp_mobileErrorMessage = "The field is required.";
         String messageOnFailure_ErrorMessages = "The error message is wrong or not shown";
         Jobs.verifyShownErrorMessages(exp_nameErrorMessage, exp_emailErrorMessage, exp_mobileErrorMessage, messageOnFailure_ErrorMessages);
+    }
+
+    /**
+     * Test method that open Careers and search all available jobs only for cities Sofia and Skopje and then printing them.
+     * @throws IOException
+     */
+    @Test
+    public void printAvailablePositionsByCities_Test() throws IOException {
+        Home.goTo();
+        PageHeader.openCareersPage();
+        Careers.clickOpenPositionsButton();
+
+        String valueFromDropdown_Sofia = "Sofia";
+        String valueFromDropdown_Skopje = "Skopje";
+        JoinUs.selectValueFromDropdown(valueFromDropdown_Sofia);
+        JoinUs.addOpenPositionsByCityToList(valueFromDropdown_Sofia);
+
+        JoinUs.selectValueFromDropdown(valueFromDropdown_Skopje);
+        JoinUs.addOpenPositionsByCityToList(valueFromDropdown_Skopje);
+
+        JoinUs.printAddedInListOpenPositions();
     }
 }

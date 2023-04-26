@@ -33,7 +33,7 @@ public class Company extends BasePageAction {
     }
 
     /**
-     * Click Facebook link from the page footer and switch the the newly opened window
+     * Click Facebook link from the page footer and switch the newly opened window
      */
     public static void clickFacebookLink_FromFooter() {
         click(COOKIES_ACCEPT_BUTTON);
